@@ -43,5 +43,77 @@ Video de refuerso:
 ![Texto alternativo](https://i0.wp.com/www.zonamaker.com/images/contenido/impresora_3d/crea_impresora/3_electronica_imp/esquema_impresora.jpg)
 
 Los  datos transmitidos por el puerto  serial pueden ser sometidos  aun formato de transmisión. Mas información en Arduino LanguageReference.
+ una de  las impresoras  que se puede conectar con andruino  son  las computadoras  en 3D  con el andruino es mas  facil  armar una impresora 3D ya que esta lleva  cómo usa los periféricos usados (motores, display, botones, etc…).
 
 Serial.begin() y el Serial.print() y su codificación detallamos a continuación 
+## Serial.begin()
+Rutina
+para abrir el puerto serial
+Junto a la apertura del puerto se
+debe de definir la velocidad de
+transmisión de datos.
+
+### Sintaxis :
+
+Serial.begin(SPEED)
+
+SPEED: Velocidad en bits por
+segundo.
+## Serial.print
+Esta rutina da inicio a la
+transmisión de caracteres a través
+del puerto serial.
+
+### Sintaxis :
+Serial.print
+(VALOR)
+
+VALOR:
+cualquier tipo de dato,
+desde cadenas hasta caracteres.
+
+Aparte  de estos  codigos  va ya la programacion  para ello  se necesita una linea de codigo 
+
+### blinkSerial.ino
+Inicializa el puerto serial con una velocidad de transmisión de 9600 bits por
+segundo. a continuacion se dara un extrato de la programacion:
+
+
+int
+led 13;
+
+void
+setup()
+{
+
+pinMode
+(led OUTPUT);
+
+Serial.begin
+(9600)  //Inicializa el puerto serial con una velocidad de transmisión de 9600 bits por
+segundo.
+
+}
+
+void
+loop() {
+
+Serial.print
+("ALTO/n");
+
+digitalWrite
+(led,HIGH);
+
+delay
+(1000);
+
+Serial.println
+("BAJO");
+
+digitalWrite
+led LOW(led;low);
+
+delay
+(1000);
+
+}
