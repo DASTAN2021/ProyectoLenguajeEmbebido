@@ -37,3 +37,11 @@ Video de refuerso:
 [enlace en línea](https://www.youtube.com/playlist?list=PLg9EfzMaKPILl1Vkvoy93pmBi8JN6yKuF)
 
 ![Texto alternativo](https://i.pinimg.com/originals/cc/b2/f5/ccb2f5f1008b324e19add5295cc14e68.png)
+
+
+## MÓDULOS DE COMUNICACIÓN
+![Texto alternativo](https://i0.wp.com/www.zonamaker.com/images/contenido/impresora_3d/crea_impresora/3_electronica_imp/esquema_impresora.jpg)
+
+Los  datos transmitidos por el puerto  serial pueden ser sometidos  aun formato de transmisión. Mas información en Arduino LanguageReference.
+
+Serial.begin() y el Serial.print() y su codificación detallamos a continuación 
