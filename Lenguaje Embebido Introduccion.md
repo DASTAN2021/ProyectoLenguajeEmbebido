@@ -90,7 +90,7 @@ pinMode
 (led OUTPUT);
 
 Serial.begin
-(9600)  //Inicializa el puerto serial con una velocidad de transmisión de 9600 bits por
+(9600)   //Inicializa el puerto serial con una velocidad de transmisión de 9600 bits por
 segundo.
 
 }
@@ -108,7 +108,10 @@ delay
 (1000);
 
 Serial.println
-("BAJO");
+("BAJO"); // El uso de
+Serial.println () nos ahorra la necesidad de
+cadena enviada.
+incluir el carácter de retorno de línea (“ \n”) en cada
 
 digitalWrite
 led LOW(led;low);
@@ -117,3 +120,9 @@ delay
 (1000);
 
 }
+
+## ENTRADA DE COMUNICACION SERIAL
+
+![Texto alternativo](https://3.bp.blogspot.com/-5n--UZFuAxM/WW7jPz0eIJI/AAAAAAAABEU/oTHSQ--e02ECHtaqxkUUtY91Zid74w5NwCLcBGAs/s1600/96.png)
+
+comunicación serial puede ser utilizada para adquisición de datos, control, depuración de código, etc. El concepto de comunicación serial permite la transmisión- recepción bit a bit de un byte completo, este método de comunicación puede alcanzar mayores distancias.
